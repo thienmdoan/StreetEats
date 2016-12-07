@@ -45,25 +45,25 @@ function renderRestaurant() {
   name.setAttribute('class', 'name');
   name.textContent = (restaurants[i].name);
 
-  var price = document.createElement('span');
-  price.setAttribute('class', 'price');
-  price.textContent = (restaurants[i].price);
-
   var rating = document.createElement('span');
   rating.setAttribute('class', 'rating');
   rating.textContent = (restaurants[i].rating);
 
+  var price = document.createElement('span');
+  price.setAttribute('class', 'price');
+  price.textContent = (restaurants[i].price);
+
   var address = document.createElement('div');
   address.setAttribute('class', 'address');
-  address.textContent = (restaurants[i].addresss);
+  address.textContent = (restaurants[i].address);
 
   var review = document.createElement('div');
-  review.setAttribute ('class', 'address');
-  review.textContent = (restaurants[i].review);
+  review.setAttribute ('class', 'review');
+  review.textContent = ('"' + restaurants[i].review + '"');
 
   $restaurant.appendChild(name);
-  $restaurant.appendChild(price);
   $restaurant.appendChild(rating);
+  $restaurant.appendChild(price);
   $restaurant.appendChild(address);
   $restaurant.appendChild(review);
   $restaurant.appendChild(img);
