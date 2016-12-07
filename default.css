@@ -22,6 +22,10 @@ body {
 }
 
 #pageview {
+  text-align: center;
+}
+
+#pageview {
   margin-top: 100px;
 }
 
@@ -44,4 +48,11 @@ body {
 
 .price {
   padding-right: 10px;
+}
+
+.img-default {
+  background-image: url("http://www.eetapp.com/uploads/members/member_icon/default-avatar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
 }

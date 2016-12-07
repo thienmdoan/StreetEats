@@ -38,6 +38,9 @@ function renderRestaurant() {
   var $restaurant = document.createElement('div');
   $restaurant.setAttribute('class', 'restaurant');
 
+  var img = document.createElement('div');
+  img.setAttribute('class', 'img-default');
+
   var name = document.createElement('span');
   name.setAttribute('class', 'name');
   name.textContent = (restaurants[i].name);
@@ -63,6 +66,7 @@ function renderRestaurant() {
   $restaurant.appendChild(rating);
   $restaurant.appendChild(address);
   $restaurant.appendChild(review);
+  $restaurant.appendChild(img);
 
   return $restaurant;
 }
