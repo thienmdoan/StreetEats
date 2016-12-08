@@ -1,32 +1,41 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 1000px;
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 100%;
 }
 
 #logo {
+  margin
+  width: 80%;
+  padding-top: 70px;
   background-color: #3f6579;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
-  width: 100%;
-  padding-top: 100px;
+  font-size: 50px;
 }
 
 #logo-name {
   color: white;
+  text-align: center;
+  font-family: "Molle", cursive;
 }
 
 #logo-img {
   position: absolute;
-  background-image: url("http://www.iconsdb.com/icons/preview/caribbean-blue/yelp-2-xxl.png");
+  background-image: url("http://cliparts.co/cliparts/rcn/req/rcnreqz9i.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
   height: 80px;
-  width: 100%;
-  margin-top: -5%;
+  width: 80%;
+  margin-top: -2%;
 }
 
 #pageview {
@@ -35,20 +44,28 @@ body {
 
 #pageview {
   margin-top: 20px;
+  background-position: center;
 }
 
 #results {
-  margin-left: 20%;
-  width: 80%;
+  margin-left: 5%;
+  margin-top: 1px;
   height: 50px;
-  margin-top: 50px;
+  background-position: center;
+  width: 80%;
 }
 
 .restaurant {
-  width: 80%;
-  font-size: 20px;
-  text-align: left;
+  background-position: center;
+  max-width: 1000px;
+  min-width: 400px;
+  padding-left: 8%;
+  margin-left: 10%;
   margin-bottom: 20px;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding-right: 15%;
 }
 
 .restaurant:hover {
@@ -59,31 +76,60 @@ body {
 
 .name {
   padding-right: 10px;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .price {
-  margin-top: 2%;
   float: right;
+  margin-top: 2%;
   margin-right: 30%;
 }
 
 .rating {
-  margin-top: 2%;
   float: right;
+  margin-top: 2%;
 }
 
 .review {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 .address {
   margin-top: 2%;
+  font-weight: bold;
 }
 
-.img-default {
-  background-image: url("http://www.eetapp.com/uploads/members/member_icon/default-avatar.png");
+.img-default-1 {
+  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTshbh-Q01Sp8oIG3ktfQ2PJfx2vp9DFfrve2ToVJIEdd9_6QvXQQ");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+}
+
+.img-default-2 {
+  background-image: url("http://chubbyscheesesteaks.com/wp-content/uploads/2014/08/heroburgers.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+}
+
+.img-default-3 {
+  background-image: url("https://www.mcdonalds.com/content/dam/usa/nutrition/items/hero/desktop/t-mcdonalds-Big-Mac.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+}
+
+.img-default-4 {
+  background-image: url("https://img.grouponcdn.com/deal/aMVtvvy91sUpqRCn4cFD/6A-700x420/v1/c700x420.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+}
+
+.img-default-5 {
+  background-image: url("http://images.huffingtonpost.com/2013-03-03-yakitori.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 50px;
@@ -91,24 +137,27 @@ body {
 
 #searching {
   height: 30px;
-  width: 300px;
-  margin-left: 20%;
+  width: 400px;
+  font-size: 18px;
 }
 
 #srch-btn {
+  position: relative;
   height: 40px;
   width: 100px;
-  position: relative;
 }
 
 #footer {
-  margin-bottom: -20%;
   position: absolute;
   bottom: 0;
   background-image: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/5fde2a4b99cb/assets/img/structural/660x140_footer_winter_skyline.png");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 10%;
-  width: 80%;
-  height: 20%;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+}
+
+.hidden {
+  display: none;
 }
