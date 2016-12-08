@@ -1,0 +1,114 @@
+body {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1000px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#logo {
+  background-color: #3f6579;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+#logo-name {
+  color: white;
+}
+
+#logo-img {
+  position: absolute;
+  background-image: url("http://www.iconsdb.com/icons/preview/caribbean-blue/yelp-2-xxl.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 80px;
+  width: 100%;
+  margin-top: -5%;
+}
+
+#pageview {
+  text-align: center;
+}
+
+#pageview {
+  margin-top: 20px;
+}
+
+#results {
+  margin-left: 20%;
+  width: 80%;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.restaurant {
+  width: 80%;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.restaurant:hover {
+  background-color: lightgrey;
+  color: white;
+  cursor: pointer;
+}
+
+.name {
+  padding-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.price {
+  margin-top: 2%;
+  float: right;
+  margin-right: 30%;
+}
+
+.rating {
+  margin-top: 2%;
+  float: right;
+}
+
+.review {
+  margin-top: 2%;
+}
+
+.address {
+  margin-top: 2%;
+}
+
+.img-default {
+  background-image: url("http://www.eetapp.com/uploads/members/member_icon/default-avatar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+}
+
+#searching {
+  height: 30px;
+  width: 300px;
+  margin-left: 20%;
+}
+
+#srch-btn {
+  height: 40px;
+  width: 100px;
+  position: relative;
+}
+
+#footer {
+  margin-bottom: -20%;
+  position: absolute;
+  bottom: 0;
+  background-image: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/5fde2a4b99cb/assets/img/structural/660x140_footer_winter_skyline.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10%;
+  width: 80%;
+  height: 20%;
+}
