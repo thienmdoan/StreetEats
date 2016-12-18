@@ -99,7 +99,7 @@ for (var i = 0; i < restaurants.length; i++) {
 //2. FIND WHERE THE SEARCH TEXT WILL BE INSERTED TO MATCH TEXT IN SEARCH ITEMS
 var $results = document.getElementById('results');
 var $term = document.getElementById('searching');
-
+var $details = document.getElementById('restaurant-details')
 //DEFINE THE FUNCTION TO LOOP THROUGH ALL ITEMS AND STORE THE ITEMS INTO MATCHING ITEMS
 
 function searchItems (allItems, searchVal){
@@ -149,6 +149,68 @@ function clear(element) {
     element.removeChild(element.firstChild);
   }
 }
+
+$results.addEventListener('click', function(event){
+  event.preventDefault();
+  //( USE CONSOLE LOG TO CHECK RESULTS)
+  if(event.target.className === 'restaurant'){
+    for (var i = 0; i < restaurants.length; i++){
+      var $item = restaurants[i];
+      if(event.target.dataset.id == $item.id) {
+        var $renderItem = renderDetails($item);
+        var $showItem = showBusiness($renderItem);
+        $details.appendChild($showItem);
+      }
+    }
+    console.log(event.target);
+  }
+});
+
+function showBusiness (restaurant) {
+var $active = document.getElementsByClassName('active')[0];
+ $active.classList.remove('active');
+ $active.classList.add('hidden');
+ var $hidden = document.getElementsByClassName('hidden')[1];
+ $hidden.classList.remove('hidden');
+ $hidden.classList.add('active');
+ var $details = document.createElement('div');
+ $details.appendChild(restaurant);
+ return $details;
+}
+
+function renderDetails(item) {
+  var content = document.createElement("div");
+  content.setAttribute("class", "profile-detail");
+  content.setAttribute("id", "rest-" + item.id);
+
+  var businessName = document.createElement("div");
+  businessName.setAttribute("class", "title");
+  businessName.textContent = item.name;
+  content.appendChild(businessName);
+
+  var address = document.createElement("div");
+  address.setAttribute("class", "location");
+  address.textContent = item.address;
+  content.appendChild(address);
+
+  var rating = document.createElement("span");
+  rating.setAttribute("class", "rate");
+  rating.textContent = item.rating;
+  businessName.appendChild(rating);
+
+  var price = document.createElement("span");
+  price.setAttribute("class", "cost");
+  price.textContent = item.price;
+  rating.appendChild(price);
+
+  var image = document.createElement("div");
+  image.setAttribute("class", "biz-image");
+  image.setAttribute("id", "image-" + item.id);
+  content.appendChild(image);
+
+  return content;
+}
+
 
 //THIS IS A TESTER TO CHECK FOR BUTTONS
 //LEAVE HERE TO USE ON OTHER ITEMS

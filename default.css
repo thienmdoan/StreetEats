@@ -45,6 +45,7 @@ body {
 #pageview {
   margin-top: 20px;
   background-position: center;
+  margin-bottom: 80%;
 }
 
 #results {
@@ -148,7 +149,7 @@ body {
 }
 
 #footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   background-image: url("https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_styleguide/5fde2a4b99cb/assets/img/structural/660x140_footer_winter_skyline.png");
   background-size: contain;
@@ -156,6 +157,90 @@ body {
   background-position: center;
   width: 100%;
   height: 200px;
+}
+
+#restaurant-details {
+  position: relative;
+  left: 16%;
+}
+
+.title {
+  position: relative;
+  font-size: 36px;
+  text-align: left;
+}
+
+.rate {
+  position:relative;
+  left: 10%;
+  text-align: left;
+  font-size: 24px;
+}
+
+.cost {
+  margin-left: 20%;
+}
+
+.location {
+  position: relative;
+  text-align: left;
+  border-bottom: 1px solid black;
+  margin-right: 20%;
+}
+
+#image-1 {
+  position: relative;
+  left: 5%;
+  margin: 50px;
+  background-image: url('https://s3-media2.fl.yelpcdn.com/bphoto/wlBrlg7cz3RwYHqOp2brZg/o.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 400px;
+}
+
+#image-2 {
+  position: relative;
+  left: 5%;
+  margin: 50px;
+  background-image: url('https://s3-media4.fl.yelpcdn.com/bphoto/fTfOso-Sr8NdQrIT9PojRg/o.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 400px;
+}
+
+#image-3 {
+  position: relative;
+  left: 5%;
+  margin: 50px;
+  background-image: url('http://static1.businessinsider.com/image/5228d9db6bb3f75f278b4567/mcdonalds-may-be-forced-to-abandon-the-1-burger.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 400px;
+}
+
+#image-4 {
+  position: relative;
+  left: 5%;
+  margin: 50px;
+  background-image: url('https://s3-media1.fl.yelpcdn.com/bphoto/RTtayyK059INWA0nxyDNVQ/o.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 400px;
+}
+
+#image-5 {
+  position: relative;
+  left: 5%;
+  margin: 50px;
+  background-image: url('https://s3-media2.fl.yelpcdn.com/bphoto/FXP82IlV6cbG7xN1jJisLg/o.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 400px;
 }
 
 .hidden {
