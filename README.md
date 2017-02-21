@@ -1,5 +1,7 @@
 # YelpClone-Thien
 
+A yelp clone made for restaurant and food searches.
+
 Technologies:
 
 Javascript
