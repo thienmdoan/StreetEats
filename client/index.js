@@ -1,4 +1,20 @@
-//Make an object array to be show on the page.
+const React = require('react');
+const ReactDOM = require('react-dom');
+const Logo = require('./logo.js');
+const Page = require('./page.js');
+const Details = require('./details.js')
+
+ReactDOM.render(
+  <div className='container'>
+    <Logo/>
+    <Page/>
+    <Details/>
+  </div>,
+  document.getElementById('app')
+);
+
+
+//Make an object array to be shown on the page.
 //Use object literals
 
 var restaurants = [
