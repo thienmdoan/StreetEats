@@ -3,7 +3,7 @@ const Search = require('./search.js');
 
 const App = () => {
   return (
-    <div id='pageview'>
+    <div id='pageview' className='active'>
       <div className='active'>
         <Search/>
       </div>

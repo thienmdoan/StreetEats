@@ -2,13 +2,17 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const Logo = require('./logo.js');
 const Page = require('./page.js');
-const Details = require('./details.js')
+const Details = require('./details.js');
+const store = require('./store');
+const { Provider } = require('react-redux');
+//const Reviews = require('./reviews.js');
 
 ReactDOM.render(
   <div className='container'>
     <Logo/>
     <Page/>
     <Details/>
+
   </div>,
   document.getElementById('app')
 );
@@ -171,6 +175,7 @@ $results.addEventListener('click', function(event){
   //( USE CONSOLE LOG TO CHECK RESULTS)
   if(event.target.className === 'restaurant'){
     for (var i = 0; i < restaurants.length; i++){
+      console.log(event.target.dataset.id);
       var $item = restaurants[i];
       if(event.target.dataset.id == $item.id) {
         var $renderItem = renderDetails($item);
