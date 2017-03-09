@@ -1,0 +1,49 @@
+{
+  "name": "StreetEats",
+  "version": "1.0.0",
+  "description": "A yelp clone made for restaurant and food searches.",
+  "main": "server/index.js",
+  "engines": {
+  "node": "6.9.2"
+},
+  "scripts": {
+    "start": "node .",
+    "start:watch": "nodemon .",
+    "bundle": "browserify -t babelify client/ -o server/public/main.js",
+    "bundle:watch": "watchify -v -t babelify client/ -o server/public/main.js",
+    "dev": "npm-run-all -p start:watch bundle:watch",
+    "postinstall": "npm run bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thienmdoan/StreetEats.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thienmdoan/StreetEats/issues"
+  },
+  "homepage": "https://github.com/thienmdoan/StreetEats#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.1.0",
+    "eslint": "^3.16.1",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-react": "^6.10.0",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.2",
+    "watchify": "^3.9.0"
+  }
+}
