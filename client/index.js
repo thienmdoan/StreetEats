@@ -5,15 +5,14 @@ const Page = require('./page.js');
 const Details = require('./details.js');
 const store = require('./store');
 const { Provider } = require('react-redux');
-//const Reviews = require('./reviews.js');
 
 ReactDOM.render(
-  <div className='container'>
-    <Logo/>
-    <Page/>
-    <Details/>
-
-  </div>,
+  <Provider store={ store }>
+    <div className='container'>
+      <Logo/>
+      <Page/>
+    </div>
+  </Provider>,
   document.getElementById('app')
 );
 
